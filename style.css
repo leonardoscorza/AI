@@ -50,7 +50,18 @@ body {
 #sudoku-board {
   font-size: 2em;
   /* Ajuste conforme necessário */
+  margin: 0 auto;
+  /* Centraliza horizontalmente */
+  max-width: 100%;
+  /* Remove espaços desnecessários */
+  height: auto;
+  /* Remove espaços desnecessários */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* Centraliza verticalmente */
 }
+
 
 /* Altera as cores de fundo e do texto das células */
 .cell {
@@ -111,6 +122,13 @@ body {
   transition: background-color 0.3s;
   outline: 2px solid #fff;
 }
+
+.container {
+  max-width: 100% !important;
+  /* margin-top: 3%; */
+}
+
+
 
 .numbers-container button + button {
   margin-left: 2px;
@@ -230,6 +248,5 @@ input:checked + .slider:before {
 .sudoku-grid {
   width: 100%;
   height: 0;
-  padding-bottom: 100%; /* Isso mantém a proporção 1:1 */
   position: relative;
 }
