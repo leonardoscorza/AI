@@ -2,7 +2,7 @@
 
 # OneBitSudoku
 
-Este é um projeto de estudo desenvolvido por Léo Scorza, fundador da OneBitCode.com. Utilizamos o GitHub Copilot para acelerar o desenvolvimento e criar o projeto de forma eficiente.
+Este é um projeto de estudo desenvolvido por Léo Scorza da [https://onebitcode.com](OneBitCode.com). Utilizamos o GitHub Copilot para acelerar o desenvolvimento e criar o projeto de forma eficiente.
 
 ## Sobre o Projeto
 
@@ -18,7 +18,7 @@ OneBitSudoku é um jogo de Sudoku online. O objetivo do Sudoku é preencher uma 
 
 ## Como Jogar
 
-Acesse [https://sudoku-copilot.vercel.app/](https://sudoku-copilot.vercel.app/) para jogar. Clique em uma célula para selecioná-la e use o teclado para inserir números.
+Acesse [https://sudoku-copilot.vercel.app](https://sudoku-copilot.vercel.app) para jogar. Clique em uma célula para selecioná-la e use o teclado para inserir números.
 
 ## Licença
 
