@@ -316,14 +316,6 @@ const toggleButton = document.querySelector('#toggle-button');
 let errorCheckingEnabled = false;
 toggleButton.addEventListener('change', function() {
   errorCheckingEnabled = this.checked;
-  
-  confetti.render();  
-  setTimeout(() => {
-    confetti.clear();
-  }, 80000);
-  $('#victoryModal').modal('show');
-  document.querySelector('.sudoku-grid').classList.add('dance');
-
 });
 
 toggleButton.addEventListener('change', function() {
