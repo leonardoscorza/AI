@@ -80,7 +80,7 @@ function generateGame(difficulty) {
 }
 
 function startNewGame() {
-  if (!confirm('Tem certeza de que deseja começar um novo jogo?')) {
+  if (!confirm('Are you sure you want to start a new game?')) {
     return;
   }
 
@@ -127,9 +127,9 @@ function checkSudoku() {
 
     $('#victoryModal').modal('show');
   } else if (status === 'incorrect') {
-    alert('O Sudoku está completo, mas está incorreto. Verifique novamente!');
+    alert('The Sudoku is complete, but incorrect. Please check again!');
   } else {
-    alert('O Sudoku ainda não está completo. Continue tentando!');
+    alert('The Sudoku is not complete yet. Keep trying!');
   }
 }
 
@@ -171,7 +171,7 @@ function clearUserNumbers() {
 const clearBtn = document.getElementById('clear-btn');
 
 clearBtn.addEventListener('click', function() {
-  const userConfirmed = confirm('Tem certeza de que deseja limpar todos os números que você inseriu?');
+  const userConfirmed = confirm('Are you sure you want to clear all the numbers you entered?');
   
   if (userConfirmed) {
     clearUserNumbers();
@@ -182,7 +182,7 @@ const difficultySelect = document.getElementById('difficulty-select');
 let difficulty = difficultySelect.options[difficultySelect.selectedIndex].value;
 
 difficultySelect.addEventListener('change', function() {
-  const userConfirmed = confirm('Você selecionou uma nova dificuldade. Gostaria de gerar um novo jogo?');
+  const userConfirmed = confirm('You have selected a new difficulty. Would you like to generate a new game?');
   
   if (userConfirmed) {
     const difficulty = difficultySelect.options[difficultySelect.selectedIndex].value;
@@ -197,21 +197,21 @@ const numberButtons = document.querySelectorAll('.numbers-container button');
 
 
 function isValid(board, row, col, num) {
-  // Verifica a linha
+  // Check row
   for (let i = 0; i < 9; i++) {
     if (board[row][i] === num) {
       return false;
     }
   }
 
-  // Verifica a coluna
+  // Check column
   for (let i = 0; i < 9; i++) {
     if (board[i][col] === num) {
       return false;
     }
   }
 
-  // Verifica o bloco 3x3
+  // Check 3x3 box
   const startRow = row - row % 3;
   const startCol = col - col % 3;
   for (let i = 0; i < 3; i++) {
@@ -241,7 +241,7 @@ const insert_number = (number, selectedCell) => {
     }
 
   } else {
-    alert('Número inválido. Por favor, insira um número de 1 a 9.');
+    alert('Invalid number. Please enter a number from 1 to 9.');
   }
 }
 
@@ -311,7 +311,7 @@ document.addEventListener('click', function(event) {
 });
 
 
-// -- Verificação de erro -- //
+// -- Error Checking -- //
 const toggleButton = document.querySelector('#toggle-button');
 let errorCheckingEnabled = false;
 toggleButton.addEventListener('change', function() {
