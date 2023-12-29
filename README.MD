@@ -1,4 +1,4 @@
-![Logo](icon.png)
+<img src="icon.png" alt="Logo" width="200">
 
 # OneBitSudoku
 
