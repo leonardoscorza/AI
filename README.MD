@@ -2,7 +2,7 @@
 
 # OneBitSudoku
 
-Este é um projeto de estudo desenvolvido por Léo Scorza da [https://onebitcode.com](OneBitCode.com). Utilizamos o GitHub Copilot para acelerar o desenvolvimento e criar o projeto de forma eficiente.
+Este é um projeto de estudo desenvolvido por Léo Scorza da [https://onebitcode.com](https://OneBitCode.com). Utilizamos o GitHub Copilot para acelerar o desenvolvimento e criar o projeto de forma eficiente.
 
 ## Sobre o Projeto
 
